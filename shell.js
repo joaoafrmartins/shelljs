@@ -25,6 +25,10 @@ exports.pwd = common.wrap('pwd', _pwd);
 var _ls = require('./src/ls');
 exports.ls = common.wrap('ls', _ls);
 
+//@include ./src/ln
+var _ln = require('./src/ln');
+exports.ln = common.wrap('ln', _ln);
+
 //@include ./src/find
 var _find = require('./src/find');
 exports.find = common.wrap('find', _find);
@@ -84,10 +88,6 @@ var _pushd = require('./src/dirs').pushd;
 exports.pushd = common.wrap('pushd', _pushd);
 var _popd = require('./src/dirs').popd;
 exports.popd = common.wrap("popd", _popd);
-
-//@include ./src/ln
-var _ln = require('./src/ln');
-exports.ln = common.wrap('ln', _ln);
 
 //@
 //@ ### exit(code)
